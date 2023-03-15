@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=JetBrains+Mono:wght@800&display=swap");
+* {
+  font-family: "Inter";
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+body,
+html {
+  background-color: #232323;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#buttons {
+  overflow: hidden;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  margin: 20px;
+  border: none;
+  background: #735bb0;
+  font-size: 17px;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  box-shadow: 0 6px #4f3a85;
+  cursor: pointer;
+  margin-bottom: 6px;
+  transition: 0.2s;
+  user-select: none;
+  position: relative;
+}
+
+#grab {
+  margin-right: 0px;
+}
+
+span {
+  font-family: "JetBrains Mono";
+}
+
+button:hover {
+  background: #946ff2;
+  -ms-transform: scale(1.03);
+  /* IE 9 */
+  -webkit-transform: scale(1.03);
+  /* Safari */
+  transform: scale(1.03);
+}
+
+button:active {
+  margin-top: 26px;
+  box-shadow: 0 3px #523799;
+  outline: none;
+}
+
+section {
+  top: 72.5px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+.box,
+#result {
+  background-color: #313131;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.box .ball,
+#result .ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  margin: 15px;
+}
+.box .ball.wood,
+#result .ball.wood {
+  width: 20px;
+  height: 20px;
+  border: 5px solid #574a35;
+}
+.box .ball.gold,
+#result .ball.gold {
+  background-color: #fad161;
+}
+.box .ball.hidden,
+#result .ball.hidden {
+  opacity: 0;
+}
+
+.selected {
+  box-shadow: 0 0 5px 0 #946ff2;
+}
+
+#label {
+  position: fixed;
+  top: 140px;
+}
+
+#result {
+  position: fixed;
+  top: 180px;
+}
+
+#resultcounter {
+  position: fixed;
+  top: 250px;
+}

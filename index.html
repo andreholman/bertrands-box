@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bertrand's box Paradox</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div id="buttons">
+        <div class="wrapper">
+            <button id="grab">Grab a ball</button>
+        </div>
+        <div class="wrapper">
+            <button id="grabmore">Grab 10 balls</button>
+        </div>
+    </div>
+    <section>
+        <div class="box">
+            <div class="ball wood"></div>
+            <div class="ball wood"></div>
+        </div>
+        <div class="box">
+            <div class="ball wood"></div>
+            <div class="ball gold"></div>
+        </div>
+        <div class="box">
+            <div class="ball gold"></div>
+            <div class="ball gold"></div>
+        </div>
+    </section>
+    <p id="label">Result:</p>
+    <div id="result">
+
+    </div>
+    <p id="resultcounter">
+        2nd ball wooden: <span id="woodcount">0</span><br> 2nd ball golden: <span id="goldcount">0</span><br>
+        <span id="ratio">0</span>% are gold
+    </p>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
